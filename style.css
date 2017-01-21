@@ -1,0 +1,72 @@
+body  {
+	background-color: #232323;
+	font-family: "Montserrat","Avenir";
+	margin: 0;
+}
+
+h1 {
+	background-color: #4682B4;
+	color: white;
+	font-weight: normal;
+	line-height: 1.1;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 20px 0;
+	margin: 0;
+}
+#colorDisplay {
+	font-size: 200%;
+}
+
+#gameModes {
+	background-color: white;
+	text-align: center;
+	margin: 0;
+}
+
+#container {
+	margin: 20px auto; /* Centers the div */
+	width: 400px;
+}
+
+.boxes {
+	background-color: pink;
+	border-radius: 20%;
+	float: left;
+	margin: 1.66%;
+	padding-top: 30%;
+	transition: background 0.6s;
+	width: 30%;
+	--web-transition: background 0.6s;
+	--moz-transition: background 0.6s;
+}
+
+button {
+	border: none;
+	background: none;
+	color: #4682B4;
+	font-weight: 700;
+	font-size: inherit;
+	letter-spacing: 1px;
+	outline: none;
+	text-transform: uppercase;
+	transition: all 0.3s;
+	--web-transition: all 0.3s;
+	--moz-transition: all 0.3s;
+
+}
+
+button:hover {
+	color: white;
+	background: #4682B4;
+}
+
+#messageResult {
+	display: inline-block;
+	width: 20%;
+}
+
+.selected {
+	color: white;
+	background: #4682B4;
+}
