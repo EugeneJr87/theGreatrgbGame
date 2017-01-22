@@ -7,7 +7,7 @@ var resultMessage = document.querySelector("#messageResult");
 var h1Color = document.querySelector("h1");
 var reset = document.querySelector("#reset");
 var easy = document.querySelector("#easy");
-var medium = document.querySelector("#medium");
+var hard = document.querySelector("#hard");
 
 //reset 
 reset.addEventListener("click", function(){
@@ -84,7 +84,7 @@ function resetbtn(){
 //gameMode easy
 easy.addEventListener("click",function(){
 	easy.classList.add("selected");
-	medium.classList.remove("selected");
+	hard.classList.remove("selected");
 	numBoxes = 3;
 	colors = addingRandomColors(numBoxes);
 	correctColor = pickColor();
@@ -99,10 +99,10 @@ easy.addEventListener("click",function(){
 
 });
 
-//gameMode medium
-medium.addEventListener("click",function(){
+//gameMode hard
+hard.addEventListener("click",function(){
 	easy.classList.remove("selected");
-	medium.classList.add("selected");
+	hard.classList.add("selected");
 	numBoxes = 6;
 	colors = addingRandomColors(numBoxes);
 	correctColor = pickColor();
@@ -112,16 +112,3 @@ medium.addEventListener("click",function(){
 			boxes[i].style.display = "block";
 			}
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
